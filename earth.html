@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Planets site." />
+    <meta
+      name="keywords"
+      content="Planets, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune"
+    />
+    <meta name="author" content="Shorena Bakradze" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta property="og:url" content="shorenabakradze.github.io/final/" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About the solar system" />
+    <meta property="og:description" content="the solar system" />
+    <meta
+      property="og:image"
+      content="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRcf9FiFK243A65CF7cgZJWygno8HBu3vGP1w64W4Dq-W2BGK7h1YoR5fSsjWbkM_sC"
+    />
+    <title>The Planets</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="icon" sizes="32x32" href="photo/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="main-div">
+          <h2 class="logo">The Planets</h2>
+          <nav>
+              <a class="nav-bg" href="Mercury.html">Mercury</a>
+              <a class="nav-bg" href="venus.html">Venus</a>
+              <a class="nav-bg" href="earth.html">Earth</a>
+              <a class="nav-bg" href="mars.html">Mars</a>
+              <a class="nav-bg" href="jupiter.html">Jupiter</a>
+              <a class="nav-bg" href="saturn.html">Saturn</a>
+              <a class="nav-bg" href="uranus.html">Uranus</a>
+              <a class="nav-bg" href="neptune.html">Neptune</a>
+          </nav>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <div class="closedMenu" id="myLinks">
+      <div class="nav-burger">
+        <div class="circle1">
+          <span></span>
+          <a href="Mercury.html">Mercury</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle2">
+          <span> </span>
+          <a href="venus.html">Venus</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle3">
+          <span> </span>
+          <a href="earth.html">Earth</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle4">
+          <span> </span>
+          <a href="mars.html">Mars</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle5">
+          <span> </span>
+          <a href="jupiter.html">Jupiter</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle6">
+          <span> </span>
+          <a href="saturn.html">Saturn</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle7">
+          <span> </span>
+          <a href="uranus.html">Uranus</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+      <div class="nav-burger">
+        <div class="circle8">
+          <span> </span>
+          <a href="neptune.html">eptune</a>
+        </div>
+        <div class="menu-icon">›</div>
+      </div>
+    </div>
+</header>
+<section>
+  <div class="planet-bg">
+    <div class="left-wrapper">
+      <div id="planetImages"></div>
+    </div>
+    <div class="right-wrapper">
+      <div class="rightContent">
+        <div id="planetName"></div>
+        <div id="planetContent"></div>
+        <span class="planetLink"
+          >source: <a href="#" class="wiki">wikipedia↗</a></span
+        >
+      </div>
+      <div class="buttonin">
+        <button
+          id="overviewBtn"
+          class="overview-btn earthbtn"
+          onclick="toggle('overview')"
+        >
+          <span class="numbers"><b>01</b></span> OVERVIEW
+        </button>
+        <button
+          id="structureBtn"
+          class="overview-btn earthbtn"
+          onclick="toggle('structure')"
+        >
+          <span class="numbers"><b>02</b></span>
+          <b class="numbers">INTERNAL</b> <span><b>STRUCTURE</b></span>
+        </button>
+        <button
+          id="geologyBtn"
+          class="overview-btn earthbtn"
+          onclick="toggle('geology')"
+        >
+          <span class="numbers"><b>03</b></span> SURFACE
+          <span class="numbers"> GEOLOGY</span>
+        </button>
+      </div>
+      <br /><br/>
+    </div>
+  </div>
+</section>
+<section class="planet-data">
+  <div class="other-info">
+    <div class="rotationTime"></div>
+    <div class="revolutionTime"></div>
+    <div class="radius"></div>
+    <div class="averageTemperature"></div>
+  </div>
+</section>
+<br>
+<br>
+<main class="star">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</main>
+
+<script src="script/burgermenu.js" defer></script>
+<script src="script/script.js" defer></script>
+<script src="script/planetData.js" defer></script>
+  </body>
+</html>
